@@ -4,3 +4,15 @@
 [submodule "vim"]
 	path = vim
 	url = https://github.com/carlhuda/janus.git
+[submodule "janus/autoclose"]
+	path = janus/autoclose
+	url = https://github.com/Townk/vim-autoclose.git
+[submodule "janus/scala-lang"]
+	path = janus/scala-lang
+	url = https://bjartek@github.com/bjartek/scala-vim-support.git
+[submodule "janus/vim-powerline"]
+	path = janus/vim-powerline
+	url = https://github.com/Lokaltog/vim-powerline.git
+[submodule "janus/vimwiki"]
+	path = janus/vimwiki
+	url = https://github.com/vim-scripts/vimwiki.git
