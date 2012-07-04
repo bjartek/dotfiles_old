@@ -1,0 +1,16 @@
+let mapleader = ","
+set t_Co=256
+
+call janus#disable_plugin('endwise', "Do not use ruby")
+call janus#disable_plugin('vroom', "Do not use ruby")
+
+call janus#disable_plugin('pep8', "Do not use python")
+call janus#disable_plugin('scala', "Use my own")
+
+call janus#disable_plugin('buffergator', "Do not need it, use ctrlp")
+
+let g:Powerline_symbols = 'unicode'
+let g:Powerline_colorscheme = 'skwp'
+
+let g:vimwiki_list = [{'path': '~/Dropbox/wiki/dev/', 'path_html': '~/Dropbox/wiki/dev/public_html/'},
+                    \ {'path': '~/Dropbox/wiki/wod/', 'path_html': '~/Dropbox/wiki/wod/public_html/'}]

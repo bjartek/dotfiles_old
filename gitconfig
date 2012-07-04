@@ -1,0 +1,64 @@
+[user]
+  email = bjarte@bjartek.org
+	name = Bjarte Stien Karlsen
+[diff]
+  renameLimit = 0
+  tool = opendiff
+[github]
+  user = bjartek
+[core]
+  editor = vim
+[alias]
+  aliases = !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'
+  bd = branch -d
+  br = branch
+  bra = branch -a
+  ca = commit -a -m
+  cb = checkout -b
+  ct = checkout --track -b
+  ci = commit
+  co = checkout
+  cp = cherry-pick
+  ff = !gitflow-feature-finish
+  fs = flow feature start
+  gcap = !sh -c 'git commit -v -a && git push'
+  gpp = !sh -c 'git pull; git push'
+  irb = rebase -i
+  last = log -1 HEAD
+  lc = !git-list-branch-commit
+  lg  = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)%an%Creset' --abbrev-commit --date=relative
+  me = merge
+  mes = merge --squash
+  mff = merge --no-ff
+  pa = add -p
+  rb = rebase
+  rh = reset --hard
+  st = status
+  sc = svn dcommit
+  sr = svn rebase
+  unstage = reset HEAD --
+  v=!open -a GitX 
+  visual=!open -a GitX 
+[gui]
+  recentrepo = /Users/bjartek/dev/bjartek.github.com
+[color]
+  ui = true
+[remote "origin"]
+  push = HEAD
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan

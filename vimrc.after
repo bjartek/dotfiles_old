@@ -1,0 +1,14 @@
+set relativenumber
+set background=dark
+color solarized
+
+"" ANDREI Go back to the position the cursor was on the last time this file was edited
+au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")|execute("normal `\"")|endif
+
+let $JS_CMD='node'
+
+let g:AutoClosePairs = {'(': ')', '{': '}', '[': ']', '"': '"', "'": "'", '#{': '}', '|':'|' } 
+let g:AutoCloseProtectedRegions = ["Character"] 
+set clipboard=unnamed
+
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/target*

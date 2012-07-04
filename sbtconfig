@@ -1,0 +1,2 @@
+SBT_OPTS="-XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=256M -Dfile.encoding=UTF8 -Xmx1536M -Xss1M -noverify"
+
